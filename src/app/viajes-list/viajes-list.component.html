@@ -1,1 +1,27 @@
-<p>viajes-list works!</p>
+<div class="modal-body">
+    <h1 class="fs-5 fw-bold ms-5 mt-5">Viajes disponibles</h1>
+    <table class='table  table-striped text-center m-1 mb-5'>
+        <thead class="table-dark text-center fw-bold text-warning">
+            <tr>
+                <th>Salida</th>
+                <th>Destino</th>
+                <th>Día</th>
+                <th>Horario</th>
+                <th>Lugares</th>
+                <th>Acepta Mascota</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            <tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{viajes.salida}}</td>
+                    <td>{{viajes.destino}}</td>
+                    <td>{{viajes.dia}}</td>
+                    <td>{{viajes.horario}}</td>
+                    <td>{{viajes.lugares}}</td>
+                    <td>{{viajes.mascota}}</td>
+                    <td>{{viajes.precio}}</td>
+                    <td><img [src]="viajes.images" [alt]="viajes.salida"></td>
+                </tr>
+</table>
