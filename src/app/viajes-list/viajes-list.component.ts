@@ -14,23 +14,24 @@ export class ViajesListComponent {
       lugares: 2,
       mascota:"perro/a",
       precio: 1200,
-      datos:"mascota en canil",
       disponible: false,
       images:"assets/img/viaje1.jpg",
+      reserva: 0,
   },
   {
     salida: "Tandil",
     destino:"San Alberto",
     dia: "28/12/2022",
     horario:"08:00",
-    lugares: 1,
+    lugares: 3,
     mascota:"ninguna",
     precio: 2300,
-    datos:"ninguno",
     disponible: true,
     images:"assets/img/viaje1.jpg",
+    reserva: 0,
   },
   {
+    images:"assets/img/viaje1.jpg",
     salida: "Mar del Plata",
     destino:"Azul",
     dia: "28/01/2023",
@@ -38,9 +39,18 @@ export class ViajesListComponent {
     lugares: 1,
     mascota:"ninguna",
     precio: 1300,
-    datos:"traer mate",
     disponible: false,
-    images:"assets/img/viaje1.jpg",
+    reserva: 0,
   },
 ]
+ngOnInit():void{
+}
+upReserva(viaje: Viajes):void{
+  if((viaje.lugares>0)&&(viaje.lugares>viaje.reserva))
+  viaje.reserva++;
+}
+downReserva(viaje: Viajes):void{
+  if(viaje.reserva>0)
+  viaje.reserva--;
+}
 }

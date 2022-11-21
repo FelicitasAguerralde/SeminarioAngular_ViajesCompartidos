@@ -7,6 +7,6 @@ export interface Viajes{
     lugares: number,
     mascota: string,
     precio: number,
-    datos: string,
     disponible: boolean,
+    reserva: number,
 }

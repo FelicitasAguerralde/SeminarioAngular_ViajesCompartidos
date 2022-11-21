@@ -4,6 +4,7 @@
     <table class='table  table-striped text-center m-1 mb-5'>
         <thead class="table-dark text-center fw-bold text-warning">
             <tr>
+                <th>Imagen</th>
                 <th>Salida</th>
                 <th>Destino</th>
                 <th>Día</th>
@@ -11,13 +12,13 @@
                 <th>Lugares</th>
                 <th>Acepta Mascota</th>
                 <th>Precio</th>
-                <th>Datos</th>
                 <th>Disponible</th>
-                <th>Imagen</th>  
+                <th>Reservar lugares</th>  
             <tr>
         </thead>
         <tbody>
             <tr *ngFor="let viaje of viajes" [ngClass]="{'disponible':viaje.disponible}">
+                <td><img width="50" class="img.thumbnail" [src]="viaje.images" [alt]="viaje.salida"></td>
                 <td>{{viaje.salida}}</td>
                 <td>{{viaje.destino}}</td>
                 <td>{{viaje.dia}}</td>
@@ -25,8 +26,10 @@
                 <td>{{viaje.lugares}}</td>
                 <td>{{viaje.mascota}}</td>
                 <td>{{viaje.precio | currency}}</td>
-                <td>{{viaje.datos}}</td>
-                <td><span class="btn btn-success" *ngIf="viaje.disponible==true">Disponible</span></td>
-                <td><img [src]="viaje.images" [alt]="viaje.salida"></td>
+                <td><span *ngIf="viaje.disponible==true">Disponible</span></td>
+                <td><button class="btn btn-light btn-sm" *ngIf="viaje.disponible==true" (click)="downReserva(viaje)">-</button>
+                    <input type="text" [value]="viaje.reserva">
+                    <button class="btn btn-light btn-sm" *ngIf="viaje.disponible==true"(click)="upReserva(viaje)">+
+                </button></td>
             </tr>
     </table>
