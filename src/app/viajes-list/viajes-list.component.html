@@ -24,7 +24,7 @@
                 <td>{{viaje.horario}}</td>
                 <td>{{viaje.lugares}}</td>
                 <td>{{viaje.mascota}}</td>
-                <td>{{viaje.precio}}</td>
+                <td>{{viaje.precio | currency}}</td>
                 <td>{{viaje.datos}}</td>
                 <td><span class="btn btn-success" *ngIf="viaje.disponible==true">Disponible</span></td>
                 <td><img [src]="viaje.images" [alt]="viaje.salida"></td>
