@@ -11,18 +11,20 @@
                 <th>Lugares</th>
                 <th>Acepta Mascota</th>
                 <th>Precio</th>
+                <th>Datos</th>
                 <th>Imagen</th>
             <tr>
         </thead>
         <tbody>
-                <tr>
-                    <td>{{viajes.salida}}</td>
-                    <td>{{viajes.destino}}</td>
-                    <td>{{viajes.dia}}</td>
-                    <td>{{viajes.horario}}</td>
-                    <td>{{viajes.lugares}}</td>
-                    <td>{{viajes.mascota}}</td>
-                    <td>{{viajes.precio}}</td>
-                    <td><img [src]="viajes.images" [alt]="viajes.salida"></td>
-                </tr>
-</table>
+            <tr>
+                <td>{{viajes.salida}}</td>
+                <td>{{viajes.destino}}</td>
+                <td>{{viajes.dia}}</td>
+                <td>{{viajes.horario}}</td>
+                <td>{{viajes.lugares}}</td>
+                <td>{{viajes.mascota}}</td>
+                <td>{{viajes.precio}}</td>
+                <td>{{viajes.datos}}</td>
+                <td><img [src]="viajes.images" [alt]="viajes.salida"></td>
+            </tr>
+    </table>

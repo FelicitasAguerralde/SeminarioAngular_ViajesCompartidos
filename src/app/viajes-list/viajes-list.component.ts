@@ -13,7 +13,8 @@ export class ViajesListComponent {
     "horario":"11:00",
     "lugares": 2,
     "mascota":"perro/a",
-    "precio":1200,
+    "precio":"1200",
+    "datos":"mascota en canil",
     "images":"assets/img/viaje1.jpg",
   }
 }

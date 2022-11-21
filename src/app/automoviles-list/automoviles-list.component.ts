@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AutomovilesListComponent {
   automoviles={
-    "marca":"Chavrolet",
+    "marca":"Chevrolet",
     "modelo":"Cruze",
     "anio":"2022",
     "color":"Negro",
