@@ -53,4 +53,7 @@ downReserva(viaje: Viajes):void{
   if(viaje.reserva>0)
   viaje.reserva--;
 }
+changeReserva(event:any, viaje: Viajes):void{
+  
+}
 }

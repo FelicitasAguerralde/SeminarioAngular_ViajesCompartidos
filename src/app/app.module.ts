@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ViajesListComponent } from './viajes-list/viajes-list.component';
 import { AutomovilesListComponent } from './automoviles-list/automoviles-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,8 +13,11 @@ import { AutomovilesListComponent } from './automoviles-list/automoviles-list.co
     AutomovilesListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    //AppRoutingModule,
+    FormsModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -28,7 +28,7 @@
                 <td>{{viaje.precio | currency}}</td>
                 <td><span *ngIf="viaje.disponible==true">Disponible</span></td>
                 <td><button class="btn btn-light btn-sm" *ngIf="viaje.disponible==true" (click)="downReserva(viaje)">-</button>
-                    <input type="text" [value]="viaje.reserva">
+                    <input type="text" [(ngModel)]="viaje.reserva" (keyup)="changeReserva($event,viaje)">
                     <button class="btn btn-light btn-sm" *ngIf="viaje.disponible==true"(click)="upReserva(viaje)">+
                 </button></td>
             </tr>
