@@ -1,4 +1,5 @@
 export interface Viajes{
+    images: string,
     salida: string,
     destino:string,
     dia:string,
@@ -7,5 +8,5 @@ export interface Viajes{
     mascota: string,
     precio: number,
     datos: string,
-    images: string,
+    disponible: boolean,
 }

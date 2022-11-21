@@ -11,13 +11,13 @@
                 <th>Licencia</th>
         </thead>
         <tbody>
-                <tr>
-                    <td>{{automoviles.marca}}</td>
-                    <td>{{automoviles.modelo}}</td>
-                    <td>{{automoviles.anio}}</td>
-                    <td>{{automoviles.color}}</td>
-                    <td>{{automoviles.patente}}</td>
-                    <td>{{automoviles.licencia}}</td>
+                <tr *ngFor="let automovil of automoviles">
+                    <td>{{automovil.marca}}</td>
+                    <td>{{automovil.modelo}}</td>
+                    <td>{{automovil.anio}}</td>
+                    <td>{{automovil.color}}</td>
+                    <td>{{automovil.patente}}</td>
+                    <td>{{automovil.licencia}}</td>
                 </tr>
         </tbody>
         </table>

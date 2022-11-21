@@ -4,5 +4,5 @@ export interface Automoviles{
     anio:number,
     color:string,
     patente: string,
-    licencia:number,
+    licencia:number
 }
