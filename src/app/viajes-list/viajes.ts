@@ -1,4 +1,4 @@
-interface Viajes{
+export interface Viajes{
     salida: string,
     destino:string,
     dia:string,
