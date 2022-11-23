@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ViajesAboutComponent } from './viajes-about/viajes-about.component';
 import { AutomovilesViajesComponent } from './automoviles-viajes/automoviles-viajes.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CarritoComponent } from './carrito/carrito.component';
   ],
   imports: [
     BrowserModule,
-    //AppRoutingModule,
+    RouterModule,
     FormsModule,
   ],
 
