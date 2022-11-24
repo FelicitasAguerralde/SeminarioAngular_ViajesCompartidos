@@ -10,6 +10,7 @@ import { AutomovilesViajesComponent } from './automoviles-viajes/automoviles-via
 import { CarritoComponent } from './carrito/carrito.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     AutomovilesListComponent,
     ViajesAboutComponent,
     AutomovilesViajesComponent,
-    CarritoComponent
+    CarritoComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,

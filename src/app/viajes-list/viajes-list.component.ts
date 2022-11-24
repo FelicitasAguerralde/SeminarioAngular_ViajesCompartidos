@@ -45,15 +45,5 @@ export class ViajesListComponent {
 ]
 ngOnInit():void{
 }
-upReserva(viaje: Viajes):void{
-  if((viaje.lugares>0)&&(viaje.lugares>viaje.reserva))
-  viaje.reserva++;
-}
-downReserva(viaje: Viajes):void{
-  if(viaje.reserva>0)
-  viaje.reserva--;
-}
-changeReserva(event:any, viaje: Viajes):void{
-  
-}
+
 }

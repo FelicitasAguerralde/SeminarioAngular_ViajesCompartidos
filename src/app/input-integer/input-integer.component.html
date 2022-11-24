@@ -1,0 +1,6 @@
+<td>
+    <button class="btn btn-light btn-sm" (click)="downReserva(viaje)">-</button>
+    <input type="text" [(ngModel)]="viaje.reserva" (keyup)="changeReserva($event,viaje)">
+    <button class="btn btn-light btn-sm" (click)="upReserva(viaje)">+
+    </button>
+</td>
