@@ -6,7 +6,7 @@ import {Viajes} from './viajes';
   styleUrls: ['./viajes-list.component.css']
 })
 export class ViajesListComponent {
-    viajes : Viajes []=[{
+      viajes : Viajes []=[{
       salida: "Mar del Plata",
       destino:"Tandil",
       dia: "22/12/2022",

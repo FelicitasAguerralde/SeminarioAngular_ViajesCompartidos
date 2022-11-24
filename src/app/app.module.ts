@@ -9,6 +9,7 @@ import { ViajesAboutComponent } from './viajes-about/viajes-about.component';
 import { AutomovilesViajesComponent } from './automoviles-viajes/automoviles-viajes.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     RouterModule,
     FormsModule,
+    AppRoutingModule,
   ],
 
   providers: [],
