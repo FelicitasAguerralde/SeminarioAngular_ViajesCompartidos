@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Viajes Compartidos';
-  carrito='Carrito';
+  //viajes='Viajes';
+  //automoviles='automoviles';
+  //about='About';
+ // carrito='Carrito';
 }
