@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Viajes Compartidos';
+  home = 'Home';
   viajes='Viajes';
   automoviles='automoviles';
   about='About';
+  title= 'Viajes Compartidos';
   cart='Carrito';
+
 }

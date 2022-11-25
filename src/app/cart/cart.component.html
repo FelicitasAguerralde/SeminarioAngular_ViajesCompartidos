@@ -2,3 +2,10 @@
     <h1 class="fs-5 fw-bold ms-5 mt-5">Carrito</h1>
     <hr>
 </div>
+<table>
+    <td>
+        <tr *ngFor="let viaje of cartList$ | async">
+            {{viaje.salida}}:{{viaje.quantity}}
+        </tr>
+    </td>
+</table>
