@@ -31,4 +31,5 @@ export class AutomovilesListComponent {
     licencia : 23569852,
   }
 ]
+constructor() { }
 }

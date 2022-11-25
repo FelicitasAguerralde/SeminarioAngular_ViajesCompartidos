@@ -1,11 +1,13 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { ViajeCartService } from '../viaje-cart.service';
 import {Viajes} from './viajes';
+
 @Component({
   selector: 'app-viajes-list',
   templateUrl: './viajes-list.component.html',
   styleUrls: ['./viajes-list.component.css']
 })
-export class ViajesListComponent {
+export class ViajesListComponent implements OnInit{
       viajes : Viajes []=[{
       salida: "Mar del Plata",
       destino:"Tandil",
@@ -16,7 +18,7 @@ export class ViajesListComponent {
       precio: 1200,
       disponible: false,
       images:"assets/img/viaje1.jpg",
-      reserva: 0,
+      quantity: 0,
   },
   {
     salida: "Tandil",
@@ -28,7 +30,7 @@ export class ViajesListComponent {
     precio: 2300,
     disponible: true,
     images:"assets/img/viaje1.jpg",
-    reserva: 0,
+    quantity: 0,
   },
   {
     images:"assets/img/viaje1.jpg",
@@ -40,10 +42,19 @@ export class ViajesListComponent {
     mascota:"ninguna",
     precio: 1300,
     disponible: false,
-    reserva: 0,
+    quantity: 0,
   },
 ]
+  
+  constructor(private cart: ViajeCartService) { 
+}
+
 ngOnInit():void{
 }
 
+addToCart(viaje: Viajes):void{
+  this.cart.addToCart(viaje);
+  viaje.lugares -= viaje.quantity;
+  viaje.quantity=0;
+}
 }

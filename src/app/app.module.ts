@@ -7,10 +7,10 @@ import { AutomovilesListComponent } from './automoviles-list/automoviles-list.co
 import { FormsModule } from '@angular/forms';
 import { ViajesAboutComponent } from './viajes-about/viajes-about.component';
 import { AutomovilesViajesComponent } from './automoviles-viajes/automoviles-viajes.component';
-import { CarritoComponent } from './carrito/carrito.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
     AutomovilesListComponent,
     ViajesAboutComponent,
     AutomovilesViajesComponent,
-    CarritoComponent,
+    CartComponent,
     InputIntegerComponent
   ],
   imports: [

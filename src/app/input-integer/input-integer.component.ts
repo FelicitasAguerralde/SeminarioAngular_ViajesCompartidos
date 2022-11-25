@@ -1,22 +1,35 @@
-import { Component, Input } from '@angular/core';
-import { Viajes } from '../viajes-list/viajes';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
+
 @Component({
   selector: 'app-input-integer',
   templateUrl: './input-integer.component.html',
   styleUrls: ['./input-integer.component.css']
 })
-export class InputIntegerComponent {
-  @Input() 
-  viaje!: Viajes;
-  upReserva(viaje: Viajes):void{
-    if((viaje.lugares>0)&&(viaje.lugares>viaje.reserva))
-    viaje.reserva++;
+export class InputIntegerComponent implements OnInit{
+  @Input() quantity!: number;
+  @Input () max!: number;
+  @Output () quantityChange: EventEmitter<number> = new EventEmitter<number>();
+
+  ngOnInit ():void{
   }
-  downReserva(viaje: Viajes):void{
-    if(viaje.reserva>0)
-    viaje.reserva--;
+
+  upQuantity():void{
+    if(this.quantity<this.max)
+    this.quantity++;
+    this.quantityChange.emit(this.quantity);
   }
-  changeReserva(event:any, viaje: Viajes):void{
-    
+
+  downQuantity():void{
+    if(this.quantity>0)
+    this.quantity--;
+    this.quantityChange.emit(this.quantity);
   }
+
+  changeQuantity(event:any):void{
+    console.log(event.key);
+    this.quantityChange.emit(this.quantity);
+  }
+  constructor() { }
+
 }

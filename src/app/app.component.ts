@@ -10,5 +10,5 @@ export class AppComponent {
   viajes='Viajes';
   automoviles='automoviles';
   about='About';
-  carrito='Carrito';
+  cart='Carrito';
 }
