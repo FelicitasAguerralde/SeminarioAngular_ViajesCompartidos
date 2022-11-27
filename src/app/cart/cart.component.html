@@ -2,10 +2,29 @@
     <h1 class="fs-5 fw-bold ms-5 mt-5">Carrito</h1>
     <hr>
 </div>
-<table>
-    <td>
-        <tr *ngFor="let viaje of cartList$ | async">
-            {{viaje.salida}}:{{viaje.quantity}}
-        </tr>
-    </td>
+<table class='table  table-striped text-center m-1 mb-5'>
+    <thead class="table-dark text-center fw-bold text-warning">
+        <tr>
+            <th>Imagen</th>
+            <th>Salida</th>
+            <th>Destino</th>
+            <th>Día</th>
+            <th>Horario</th>
+            <th>Mascota</th>
+            <th>Precio</th>
+            <th>Reservar lugares</th>  
+        <tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let viaje of cartList$ | async">
+        <td><img width="50" class="img.thumbnail" [src]="viaje.images" [alt]="viaje.salida"></td>
+        <td>{{viaje.salida}}</td>
+        <td>{{viaje.destino}}</td>
+        <td>{{viaje.dia}}</td>
+        <td>{{viaje.horario}}</td>
+        <td>{{viaje.mascota}}</td>
+        <td>{{viaje.precio | currency}}</td>
+        <td>{{viaje.quantity}}</td>
+    </tr>
+    </tbody>
 </table>

@@ -12,6 +12,6 @@ input{
     background-color: rgba(128, 128, 128, 0.015);
 }
 button{
-    background-color: none;
     align-items: stretch;
+    background-color: rgb(133, 253, 133);
 }
