@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   home = 'Home';
   viajes='Viajes';
-  automoviles='automoviles';
+  automoviles='Automoviles';
   about='About';
   title= 'Viajes Compartidos';
+  footer='@viajes_compartidos'
   cart='Carrito';
 
 }

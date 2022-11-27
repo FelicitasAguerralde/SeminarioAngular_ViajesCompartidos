@@ -14,7 +14,7 @@
           <a class="nav-link active" aria-current="page" [routerLink]="['/automoviles']">{{automoviles}} </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" [routerLink]="['/about']">{{about}}</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/about']">{{about}}</a>
         </li>
       </ul>
     </div>
@@ -27,8 +27,8 @@
     <router-outlet></router-outlet>
   </div>
 
-<div>
+<div class="card">
   <footer>
-    {{title}}
+     {{footer}}
   </footer>
 </div>
