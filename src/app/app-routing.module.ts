@@ -12,6 +12,10 @@ const routes: Routes = [
     component: AutomovilesViajesComponent,
   },
   {
+    path: 'home',
+    component: AutomovilesViajesComponent,
+  },
+  {
     path: 'viajes',
     component: ViajesListComponent,
   },

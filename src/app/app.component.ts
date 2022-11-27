@@ -6,11 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  home = 'Home';
   viajes='Viajes';
   automoviles='Automoviles';
   about='About';
-  title= 'Viajes Compartidos';
+  title= 'Rute.Ar 26';
   footer='@viajes_compartidos'
   cart='Carrito';
 
