@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { ViajeCartService } from '../viaje-cart.service';
+import { ViajeDataService } from '../viaje-data.service';
 import {Viajes} from './viajes';
 
 @Component({
@@ -46,7 +47,9 @@ export class ViajesListComponent implements OnInit{
   },
 ]
   
-  constructor(private cart: ViajeCartService) { 
+  constructor(
+    private cart: ViajeCartService,
+    private viajesDataService: ViajeDataService) { 
 }
 
 ngOnInit():void{
