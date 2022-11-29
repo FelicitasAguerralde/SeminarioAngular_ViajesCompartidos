@@ -28,7 +28,7 @@
                 <td>{{viaje.precio | currency}}</td>
                 <td><span class="input-group" *ngIf="viaje.disponible==true">Disponible</span></td>
                 <td><app-input-integer [(quantity)]="viaje.quantity" [max]="viaje.lugares"></app-input-integer>
-                <button type="button" class="btn btn-light" (click)="addToCart(viaje)" >Reservar</button></td>
+                <button type="button" class="btn btn-light" (click)="addToCart(viaje)" *ngIf="viaje.disponible==true">Reservar</button></td>
             </tr>
             </tbody>
     </table>
