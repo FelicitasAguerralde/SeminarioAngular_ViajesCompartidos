@@ -1,27 +1,19 @@
-# ViajesCompartidos
+# Viajes Compartidos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+This project belongs to the Final Project of the Angular Seminar.
 
-## Development server
+It has been generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+We have started from the WEB 2 project, which consists of "Viajes Compartidos Ruta 226", which contains two tables: travels and cars, adapting it to the needs of Angular.
 
-## Code scaffolding
+Two APIs have been created from MOCKAPI, to take the data and display it in the corresponding tables.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Travel API: https://6382ba376e6c83b7a985c74e.mockapi.io/api/v1/share_trips
+Car API: https://6382ba376e6c83b7a985c74e.mockapi.io/api/v1/cars
 
-## Build
+Also, a travel reservation cart has been added.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+·GitHub link: https://github.com/Feluchi8921/SeminarioAngular_ViajesCompartidos.git
+·Stackblitz Link: https://stackblitz.com/edit/angular-ivy-7uw56p?file=README.md
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Developer: Felicitas Aguerralde
