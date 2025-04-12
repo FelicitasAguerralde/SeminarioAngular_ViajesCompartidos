@@ -1,9 +1,13 @@
 .disponible{
-    background-color: rgb(133, 253, 133);
+    background-color: #ffc1071e;
 }
+
 table{
+    width: auto;
+    border-collapse: collapse;
     text-align: center;
 }
+
 input{
     max-width: 30px;
     border: none;
@@ -11,7 +15,23 @@ input{
     align-content: center;
     background-color: rgba(128, 128, 128, 0.015);
 }
+
 button{
     align-items: stretch;
-    background-color: rgb(133, 253, 133);
+    background-color: #ffc107;
+    font-weight: bold;
+    box-shadow: 0 0 5px #000;
+    padding-top: 0.3px;
+    padding-bottom: 0.3px;
+}
+
+button:hover{
+    background-color: #ffc107;
+    color: white;
+    cursor: pointer;
+    color: white;
+    border: solid 1px white;
+}
+.table-responsive-container {
+    overflow-x: auto;
 }

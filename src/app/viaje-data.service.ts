@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import { Viajes } from './viajes-list/viajes';
 
-const URL='https://6382ba376e6c83b7a985c74e.mockapi.io/api/v1/viajes_compartidos';
+const URL='https://6382b8886e6c83b7a985b4dc.mockapi.io/api/v1/viajes_compartidos';
 @Injectable({
   providedIn: 'root'
 })

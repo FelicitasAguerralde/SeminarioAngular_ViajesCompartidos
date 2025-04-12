@@ -1,18 +1,20 @@
 <div class="modal-body">
-<h1 class="fs-5 fw-bold ms-5 mt-5">Autos cargados</h1>
+<div class="content">
+    <h1 class="fs-5 fw-bold ms-5 mt-5">Autos cargados</h1>
     <hr>
-    <table class='table  table-striped text-center m-1 mb-1'>
-        <thead class="table-dark text-center fw-bold text-info">
-            <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Año</th>
-                <th>Color</th>
-                <th>Patente</th>
-                <th>Licencia</th>
-        </thead>
-        <tbody>
-            <tr *ngFor="let automovil of automoviles">
+    <div class="table-responsive-container">
+        <table class='table  table-striped text-center m-1 mb-1'>
+            <thead class="table-dark text-center fw-bold text-info">
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Color</th>
+                    <th>Patente</th>
+                    <th>Licencia</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let automovil of automoviles">
                     <td>{{automovil.marca}}</td>
                     <td>{{automovil.modelo}}</td>
                     <td>{{automovil.anio}}</td>
@@ -20,6 +22,13 @@
                     <td>{{automovil.patente}}</td>
                     <td>{{automovil.licencia}}</td>
                 </tr>
-        </tbody>
+            </tbody>
         </table>
+    </div>
+</div>
+<div class="content map">
+    <h1 class="fs-5 fw-bold ms-5 mt-5">Consulta Google Maps</h1>
+    <hr>
+    <a href="https://www.google.com.ar/maps"><img id="imageCart" src="./assets/img/reserva.jpg" /></a>
+</div>
 </div>

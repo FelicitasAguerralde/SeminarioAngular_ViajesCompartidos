@@ -1,0 +1,46 @@
+table{
+    width: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-responsive-container {
+    overflow-x: auto;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+img#imageCart {
+    animation: moverSuave 2s infinite alternate;
+    width: 70%;
+    display: block; /* Asegúrate de que sea un elemento de bloque */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes moverSuave {
+    from { transform: translateY(0); }
+    to { transform: translateY(-15px); }
+}
+
+@media screen and (max-width: 1020px) {
+    img#imageCart {
+        width: 50%;
+    }
+    .modal-body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        align-items: center;
+    }
+    
+}

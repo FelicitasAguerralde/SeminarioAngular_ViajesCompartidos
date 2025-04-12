@@ -1,3 +1,12 @@
-img{
-text-align: center;
+.table-responsive-container {
+    overflow-x: auto;
 }
+table{
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+}
+.modal-body{
+    margin: 0%;
+}
+

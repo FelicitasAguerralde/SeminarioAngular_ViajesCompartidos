@@ -8,3 +8,20 @@ input{
 td{
     vertical-align: middle;
 }
+
+button{
+    background-color: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: #ffc107;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: solid 1px white;
+    width: max-content;
+    padding: 3px;
+}
