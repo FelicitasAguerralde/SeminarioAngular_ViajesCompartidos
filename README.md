@@ -1,19 +1,35 @@
-# Viajes Compartidos
+# 🚗 Viajes Compartidos
 
-This project belongs to the Final Project of the Angular Seminar.
+![Vista previa de la aplicación](screenshot.png)
 
-It has been generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+Este proyecto es una aplicación web desarrollada en Angular para la gestión de viajes compartidos y automóviles. Permite visualizar, agregar y gestionar reservas de viajes y autos cargados, con una interfaz moderna y adaptable a dispositivos móviles.
 
-We have started from the WEB 2 project, which consists of "Viajes Compartidos Ruta 226", which contains two tables: travels and cars, adapting it to the needs of Angular.
+## ✨ Características principales
+- 📅 Visualización de viajes disponibles y reservas
+- 🚙 Gestión de automóviles
+- 📱 Interfaz responsive y amigable
+- 🧭 Navegación sencilla mediante barra de navegación
+- 🎨 Estilos personalizados y consistentes
 
-Two APIs have been created from MOCKAPI, to take the data and display it in the corresponding tables.
+## 🛠️ Tecnologías utilizadas
+- ⚡ Angular
+- 🟦 TypeScript
+- 🖥️ HTML5 y CSS3
 
-Travel API: https://6382ba376e6c83b7a985c74e.mockapi.io/api/v1/share_trips
-Car API: https://6382ba376e6c83b7a985c74e.mockapi.io/api/v1/cars
+## 🚀 Instalación y uso
+1. Clona el repositorio:
+   ```
+   git clone https://github.com/FelicitasAguerralde/SeminarioAngular_ViajesCompartidos.git
+   ```
+2. Instala las dependencias:
+   ```
+   npm install
+   ```
+3. Inicia la aplicación:
+   ```
+   ng serve
+   ```
+4. Abre tu navegador en [http://localhost:4200](http://localhost:4200)
 
-Also, a travel reservation cart has been added.
-
-·GitHub link: https://github.com/Feluchi8921/SeminarioAngular_ViajesCompartidos.git
-·Stackblitz Link: https://stackblitz.com/edit/angular-ivy-7uw56p?file=README.md
-
-Developer: Felicitas Aguerralde
+## 🎓 Créditos
+Este proyecto fue realizado en el marco del **Seminario de Angular**.
