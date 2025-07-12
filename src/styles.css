@@ -1,0 +1,24 @@
+/* Estilos globales para títulos h1 */
+h1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    margin: 0 0 1rem 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    color: inherit;
+    width: 100%;
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+.img-margen-derecho {
+    margin-right: 1rem;
+}
