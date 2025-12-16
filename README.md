@@ -15,6 +15,7 @@ Este proyecto es una aplicación web desarrollada en Angular para la gestión de
 - ⚡ Angular
 - 🟦 TypeScript
 - 🖥️ HTML5 y CSS3
+- ✴️ Bootstrap 
 
 ## 🚀 Instalación y uso
 1. Clona el repositorio:
